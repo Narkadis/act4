@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4" *ngFor="let chicas of chicas ">
+            <div class="card_book ">
+                <div class="card ">
+                    <div class="card-body text-center ">
+                        <img src="{{chicas.foto}} " class="card-img " alt="... ">
+                    </div>
+                    <div class="col-md-8 ">
+                        <div class="card-body text-center " style="width: 18rem; ">
+                            <h4 class="card-title ">{{chicas.name}}</h4>
+                            <ul class="list-group text-center ">
+                                <p class="card-text text-center ">
+                                    <li class="list-group-item text-center ">Edad: {{chicas.edad}}</li>
+                                    <li class="list-group-item text-center ">Busto: {{chicas.busto}}</li>
+                                </p>
+                            </ul>
+
+                            <button type="button" class="btn btn-primary btn-block" (click)="verChica(chicas.id)">Ver mas...</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

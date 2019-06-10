@@ -1,0 +1,13 @@
+<div class="center align-content-center">
+    <div class="jumbotron center align-content-center" style="width: 40%;height: 35%; background: #ffffff;">
+        <carousel class="center" [interval]="myInterval">
+            <slide *ngFor=" let Chicas of chicas ">
+                <img src="{{Chicas.foto}} " alt="image slide " style=" width:100%; height: 100%; ">
+                <div class="carousel-caption">
+                    <h4>{{Chicas.name}}</h4>
+                    <p>{{Chicas.descripcion}}</p>
+                </div>
+            </slide>
+        </carousel>
+    </div>
+</div>

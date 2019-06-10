@@ -1,0 +1,24 @@
+<div class="animated fadeIn fast">
+    <h1>{{chica.name}}</h1>
+    <hr>
+    <div class="row">
+        <div class="col-4">
+            <img src="{{chica.foto}}" alt="{{chica.foto}}" class="img-fluid">
+            <br><br>
+            <a class="btn btn-outline-danger btn-block" [routerLink]="['/chicas']" routerLinkActive="router-link-active">Regresar</a>
+        </div>
+        <div class="col-8">
+            <h4>{{chica.name}}</h4>
+            <small> Edad:{{chica.edad}}</small>
+            <br><br>
+            <small>Altura: {{chica.altura}}</small>
+            <br><br>
+            <small>Color de cabello: {{chica.cabello}}</small>
+            <br><br>
+            <small>Color de ojos: {{chica.ojos}}</small>
+            <br><br>
+            <p>{{chica.descripcion}}</p>
+        </div>
+
+    </div>
+</div>
